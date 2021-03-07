@@ -230,6 +230,7 @@ console.log(artists[8].name);
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, num) {
+  // Return the specified string, outputting the provided num (number), and the name of the provided number from the array provided
   return `the artist at index ${num} is ${array[num].name}`;
 }  
 
@@ -244,12 +245,18 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
+  // create a new array for use later in the code
   let newArray = [];
+  // Create a FOR loop comparing i (new loop) with the length of the given array, and incrementing i until it reaches the length of the given array
   for (let i = 0; i < array.length; i++) {
+    // IF statement: if the string of the array item (corresponding to i) starts with 19,
+    // AND if the string of the array item starting at the 7th element of the string starts with 19,
+    // Add the name of the array item (corresponding to i) to the new array created, newArray
     if (array[i].years.startsWith(19) && array[i].years.startsWith(19, 7)) {
       newArray.push(array[i].name);
-    }
-  }
+    } // End of the IF statement
+  } // End of the FOR loop
+  // Nothing left to do except output newArray
   return newArray;
 }
 
@@ -263,7 +270,9 @@ function get20s(array){
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, num){
+  // Splice the given array at position num (number provided), and remove 1 element
   array.splice(num,1);
+  // return the length of the remaining dataset
   return array.length;
 }
 
@@ -284,6 +293,7 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
+  // Create the object specified
     let obj = { 
       id: 20,
       name: 'Grace de la Mora', 
@@ -292,7 +302,9 @@ function addArtist(array){
       nationality: 'Filipino',
       bio: 'Loves her cats and her husband. Not in that order. Or is?'
     };
+    // Add the newly created object to the given array, and add the object to the end of the array
     array.push(obj);
+    // Return the array
     return array;
   }
 
@@ -306,12 +318,17 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array){
+  // Create a newArray (new array) for use later in the code
   let newArray = [];
+  // Create a FOR loop comparing i (new loop) with the length of the given array, and incrementing i until it reaches the length of the given array
   for (let i = 0; i < array.length; i++) {
+    // compare the value of the array item's paintings to 100 and check if it is greater than 100
     if (array[i].paintings > 100) {
+      // push the name from the array item to newArray
       newArray.push(array[i].name);
-    }
-  }
+    } // End of IF statement
+  } // End of FOR loop
+  // return newArray
   return newArray;
 }
 
