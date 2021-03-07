@@ -24,9 +24,18 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+Accessibility for web sites is ensuring that people of various background and capabilities can access the website in question. There are accommodations for the visually impaired, hearing impaired, and for audiences who are otherwise not impaired. This allows users of all types to be able to ACCESS the content of the website without having to modify their method of access, whether it be by desktop or mobile browser or by screen reader, etc.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+1 - Ensure that you allow for multiple viewports to access your website by using the viewport meta tag inside your head element.
+2 - Use media breakpoints in your CSS to ensure that your design and flow of content is not interrupted or broken up when a user utilizes an uncommon screen resolution.
+3 - Write your HTML in a semantic manner, using descriptive semantic tags such as header, aside, main, etc. so that screen readers can properly describe the content of your web page to your audience.
+
 3. How would you explain the concept of a variable to someone new to programming?
+A variable is a value that you set either explicitly or dynamically by assigning value to your specified "key word", then accessing your "key word" elsewhere in your code. You may be able to manipulate the content of your variable or refer back to it more than once in your code.
+
 4. What is the purpose of using functions in code?
+Functions allow developers to write groups of code which can then be called back to and reused in other areas of their code.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
