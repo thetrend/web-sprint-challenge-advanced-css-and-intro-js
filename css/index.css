@@ -134,3 +134,29 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media only screen and (max-width: 800px) {
+    nav {
+        width: 60%;
+    }
+
+    .title-container div {
+        width: 100%;	
+        background-size: cover;
+    }
+    
+    .artists-container {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .artist {
+        width:80%;
+        margin-bottom: 4vh;
+    }
+    .artist > img {
+        object-fit: contain;
+        height: auto;
+        width: 80%;
+    }
+}
